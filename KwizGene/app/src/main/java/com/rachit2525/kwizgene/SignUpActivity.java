@@ -20,7 +20,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.rachit2525.kwizgene.student.StudentMainActivity;
 import com.rachit2525.kwizgene.student.StudentModel;
+import com.rachit2525.kwizgene.teacher.TeacherMainActivity;
 
 public class SignUpActivity extends AppCompatActivity {
 
@@ -124,7 +126,7 @@ public class SignUpActivity extends AppCompatActivity {
                                                    @Override
                                                    public void onComplete(@NonNull Task<Void> task) {
                                                        Toast.makeText(SignUpActivity.this, "Successfully Registered as Student!", Toast.LENGTH_SHORT).show();
-                                                       startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                                       startActivity(new Intent(getApplicationContext(), StudentMainActivity.class));
                                                    }
                                                });
                                            }
@@ -135,7 +137,7 @@ public class SignUpActivity extends AppCompatActivity {
                                                    @Override
                                                    public void onComplete(@NonNull Task<Void> task) {
                                                        Toast.makeText(SignUpActivity.this, "Successfully Registered as Teacher!", Toast.LENGTH_SHORT).show();
-                                                       startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                                       startActivity(new Intent(getApplicationContext(), TeacherMainActivity.class));
                                                    }
                                                });
                                            }

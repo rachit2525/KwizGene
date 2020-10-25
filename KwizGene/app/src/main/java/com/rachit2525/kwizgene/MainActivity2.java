@@ -21,6 +21,7 @@ public class MainActivity2 extends AppCompatActivity {
         stuLogin = findViewById(R.id.StudentBtn);
         teachLogin = findViewById(R.id.teacherBtn);
 
+
     }
     public void loginTeacher(View view) {
 //        Intent i=new Intent(this,
